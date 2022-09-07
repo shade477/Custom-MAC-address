@@ -8,7 +8,7 @@ def usr_data():
     parse_object = optparse.OptionParser()
     parse_object.add_option("-i", "--interface", dest="interface", help="The interface name")
     parse_object.add_option("-m", "--mac_address", dest="mac_address", help="Custom MAC address")
-    parse_object.add_option("-f","--find_interfaces", action="store_True",dest="find_interface",help="Detect all interfaces connected") 
+    parse_object.add_option("-f","--find_interfaces", action="store_true",dest="find_interface",help="Detect all interfaces connected", default=False) 
 
     return parse_object.parse_args()
 
